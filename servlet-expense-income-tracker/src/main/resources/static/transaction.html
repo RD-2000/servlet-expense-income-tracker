@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Transactions - Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div class="container">
+    <h2>📊 Transactions</h2>
+    <form class="form">
+        <select required>
+            <option value="" disabled selected>Select Wallet</option>
+            <option>Bank Account</option>
+            <option>Cash</option>
+        </select>
+        <select required>
+            <option value="" disabled selected>Type</option>
+            <option>Income</option>
+            <option>Expense</option>
+        </select>
+        <input type="number" placeholder="Amount" min="0.01" step="0.01" required />
+        <button type="submit" class="btn">Add Transaction</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Wallet</th>
+            <th>Type</th>
+            <th>Amount (₹)</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Bank Account</td>
+            <td>Income</td>
+            <td>20000.00</td>
+            <td>2025-05-19</td>
+        </tr>
+        <tr>
+            <td>Cash</td>
+            <td>Expense</td>
+            <td>500.00</td>
+            <td>2025-05-18</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
